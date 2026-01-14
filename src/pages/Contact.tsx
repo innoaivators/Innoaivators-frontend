@@ -33,8 +33,14 @@ export function Contact() {
     e.preventDefault();
     setStatus('loading');
 
+
     try {
-      const response = await fetch('/api/send-email', {
+      // Use the Render backend URL in production, local proxy in development
+      const apiUrl = import.meta.env.PROD
+        ? 'https://innoaivators-backend.onrender.com/api/send-email'
+        : '/api/send-email';
+
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
