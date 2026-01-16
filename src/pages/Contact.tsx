@@ -70,7 +70,7 @@ export function Contact() {
         setTimeout(() => setStatus('idle'), 5000);
       } else {
         const errorData = await response.json();
-        console.error('Backend error:', errorData);
+        console.error('Backend error:', JSON.stringify(errorData, null, 2));
         console.error('Status:', response.status);
         setStatus('error');
       }
