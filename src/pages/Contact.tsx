@@ -51,6 +51,8 @@ export function Contact() {
       });
 
       if (response.ok) {
+        const successData = await response.json();
+        console.log('Email sent successfully:', successData);
         setStatus('success');
         setFormState({
           name: '',
