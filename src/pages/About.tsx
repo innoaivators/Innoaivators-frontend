@@ -12,7 +12,7 @@ import allen from '../team/allen.jpg';
 
 import mafaz from '../team/mafaz.jpg';
 import safiq from '../team/safiq.jpg';
-import jayabalaji from '../team/jayabalaji.jpg';
+import jayabalaji from '../team/JayaBalaji.jpg';
 import useMediaQuery from '../hooks/useMediaQuery';
 
 import Timeline from './Timeline';
