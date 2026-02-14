@@ -13,10 +13,9 @@ export function Footer() {
   ];
 
   const company = [
-    { name: 'About Us', path: '/about' },
-    { name: 'Contact', path: '/contact' },
-    { name: 'Careers', path: '#' },
-    { name: 'Blog', path: '#' },
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Contact Us', path: '/contact' },
   ];
 
   const socialLinks = [
@@ -94,18 +93,18 @@ export function Footer() {
               </ul>
             </div>
 
-            <div>
+            <div className="col-span-2 md:col-span-1">
               <h4 className="font-semibold mb-4">Contact Us</h4>
               <ul className="space-y-3 text-gray-400">
                 <li className="flex items-start">
                   <MapPin size={20} className="mr-3 mt-1 flex-shrink-0" />
                   <span>Near Thanku Bakery, Tirupparankunram Rd, pallivasal complex, Madurai, Tamil Nadu 625011</span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center whitespace-nowrap">
                   <Phone size={20} className="mr-3 flex-shrink-0" />
                   <span>+91 90877 86231</span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center whitespace-nowrap">
                   <Phone size={20} className="mr-3 flex-shrink-0" />
                   <span>+91 95664 65970</span>
                 </li>

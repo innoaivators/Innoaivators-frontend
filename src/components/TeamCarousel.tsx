@@ -104,6 +104,11 @@ export const TeamCarousel: React.FC<TeamCarouselProps> = ({
   initialIndex = 0,
 }) => {
   const isLg = useMediaQuery('(min-width: 1024px)');
+  const isMobile = useMediaQuery('(max-width: 639px)');
+
+  // Determine effective dimensions based on screen size
+  const effectiveCardWidth = isLg ? cardWidth : (isMobile ? 220 : 260);
+  const effectiveCardHeight = isLg ? cardHeight : (isMobile ? 220 : 350);
 
   // Clamp visibleCards to ensure balanced layout: max (totalMembers - 1) / 2
   const maxVisible = Math.max(1, Math.floor((members.length - 1) / 2));
@@ -193,7 +198,7 @@ export const TeamCarousel: React.FC<TeamCarouselProps> = ({
           zIndex: 5,
           opacity: sideCardOpacity,
           scale: sideCardScale,
-          x: cardWidth * 0.7,
+          x: effectiveCardWidth * 0.7,
           filter: grayscaleEffect ? 'grayscale(100%)' : 'grayscale(0%)',
           pointerEvents: 'auto',
           transition,
@@ -203,7 +208,7 @@ export const TeamCarousel: React.FC<TeamCarouselProps> = ({
           zIndex: 1,
           opacity: sideCardOpacity * 0.7,
           scale: sideCardScale * 0.9,
-          x: cardWidth * 1.4,
+          x: effectiveCardWidth * 1.4,
           filter: grayscaleEffect ? 'grayscale(100%)' : 'grayscale(0%)',
           pointerEvents: 'auto',
           transition,
@@ -213,7 +218,7 @@ export const TeamCarousel: React.FC<TeamCarouselProps> = ({
           zIndex: 5,
           opacity: sideCardOpacity,
           scale: sideCardScale,
-          x: -cardWidth * 0.7,
+          x: -effectiveCardWidth * 0.7,
           filter: grayscaleEffect ? 'grayscale(100%)' : 'grayscale(0%)',
           pointerEvents: 'auto',
           transition,
@@ -223,7 +228,7 @@ export const TeamCarousel: React.FC<TeamCarouselProps> = ({
           zIndex: 1,
           opacity: sideCardOpacity * 0.7,
           scale: sideCardScale * 0.9,
-          x: -cardWidth * 1.4,
+          x: -effectiveCardWidth * 1.4,
           filter: grayscaleEffect ? 'grayscale(100%)' : 'grayscale(0%)',
           pointerEvents: 'auto',
           transition,
@@ -233,7 +238,7 @@ export const TeamCarousel: React.FC<TeamCarouselProps> = ({
           zIndex: 0,
           opacity: 0,
           scale: 0.8,
-          x: direction > 0 ? cardWidth * (visibleCards + 1) : -cardWidth * (visibleCards + 1),
+          x: direction > 0 ? effectiveCardWidth * (visibleCards + 1) : -effectiveCardWidth * (visibleCards + 1),
           pointerEvents: 'none',
           filter: grayscaleEffect ? 'grayscale(100%)' : 'grayscale(0%)',
           transition,
@@ -341,7 +346,7 @@ export const TeamCarousel: React.FC<TeamCarouselProps> = ({
       <div
         className="w-full max-w-6xl relative mt-20"
         style={{
-          height: cardHeight + 100,
+          height: effectiveCardHeight + 100,
           perspective: '1000px',
         }}
       >
@@ -385,13 +390,13 @@ export const TeamCarousel: React.FC<TeamCarouselProps> = ({
                     cardClassName
                   )}
                   style={{
-                    width: cardWidth,
-                    height: cardHeight,
+                    width: effectiveCardWidth,
+                    height: effectiveCardHeight,
                     borderRadius: cardRadius,
                     top: '50%',
                     left: '50%',
-                    marginLeft: -cardWidth / 2,
-                    marginTop: -cardHeight / 2,
+                    marginLeft: -effectiveCardWidth / 2,
+                    marginTop: -effectiveCardHeight / 2,
                   }}
                   initial={getVariantStyles('hidden')}
                   animate={getVariantStyles(position)}
