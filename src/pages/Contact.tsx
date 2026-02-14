@@ -154,16 +154,16 @@ export function Contact() {
       </section>
 
       {/* --- FORM SECTION --- */}
-      <section className="pb-16 md:pb-32 px-4 md:px-6 relative z-10">
-        <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 max-w-6xl mx-auto">
+      <section className="pb-16 md:pb-32 px-4 md:px-6 relative z-10 flex flex-col items-center">
+        <div className="w-full max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start justify-center">
 
             {/* Contact Info */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="space-y-12"
+              className="space-y-12 w-full max-w-xl mx-auto lg:mx-0"
             >
               <h2 className="text-3xl font-bold text-white">Get in touch</h2>
               <p className="text-gray-400 text-lg leading-relaxed">
@@ -195,7 +195,7 @@ export function Contact() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="relative"
+              className="relative w-full max-w-xl mx-auto lg:mx-0"
             >
               <div className="relative p-6 md:p-10 rounded-[2rem] bg-[#0A0A12] border border-white/10 shadow-2xl">
                 <BorderBeam duration={10} size={100} colorFrom="#3b82f6" colorTo="#a855f7" />

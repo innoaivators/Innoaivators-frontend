@@ -171,7 +171,7 @@ export function About() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="mb-20"
+              className="mb-20 w-full flex flex-col items-center"
             >
               <h2 className="text-4xl font-bold text-center text-white mb-2">
                 Our Team
