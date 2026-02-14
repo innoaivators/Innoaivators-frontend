@@ -130,7 +130,7 @@ export function Contact() {
       </video>
 
       {/* --- HERO SECTION --- */}
-      <section className="relative min-h-[30vh] md:min-h-[50vh] flex items-center justify-center overflow-hidden pt-28 md:pt-40">
+      <section className="relative pt-32 pb-20 px-6 overflow-hidden min-h-[50vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
         </div>
 
@@ -145,7 +145,7 @@ export function Contact() {
               24/7 Global Support
             </div>
 
-            <h1 className="text-4xl md:text-8xl font-bold leading-tight text-white mb-6">
+            <h1 className="text-3xl min-[375px]:text-4xl md:text-8xl font-bold leading-tight text-white mb-6">
               Let's Build the <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-glow">Impossible.</span>
             </h1>
@@ -154,19 +154,21 @@ export function Contact() {
       </section>
 
       {/* --- FORM SECTION --- */}
-      <section className="pb-16 md:pb-32 px-4 md:px-6 relative z-10 flex flex-col items-center">
+      <section className="pb-16 md:pb-32 px-3 md:px-6 relative z-10 flex flex-col items-center">
         <div className="w-full max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start justify-center">
 
             {/* Contact Info */}
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="space-y-12 w-full max-w-xl mx-auto lg:mx-0"
+              className="space-y-16 w-full max-w-xl mx-auto lg:mx-0"
             >
-              <h2 className="text-3xl font-bold text-white">Get in touch</h2>
-              <p className="text-gray-400 text-lg leading-relaxed">
+              <h2 className="text-lg min-[375px]:text-xl md:text-3xl font-bold text-white leading-tight">
+                Get in <br className="min-[375px]:block hidden" /> touch
+              </h2>
+              <p className="text-gray-400 text-base md:text-lg leading-relaxed">
                 Whether you have a groundbreaking idea or need to modernize your legacy infrastructure, our engineers are ready to deploy.
               </p>
 
@@ -176,14 +178,14 @@ export function Contact() {
                     key={item.title}
                     href={item.link}
                     whileHover={{ scale: 1.02 }}
-                    className={`flex items-center gap-6 p-6 rounded-2xl border border-white/5 glass-panel hover:bg-white/5 transition-all group`}
+                    className={`flex flex-col items-start min-[375px]:flex-row min-[375px]:items-center gap-3 md:gap-6 p-4 md:p-6 rounded-2xl border border-white/5 glass-panel hover:bg-white/5 transition-all group`}
                   >
-                    <div className={`w-12 h-12 rounded-xl ${item.bg} flex items-center justify-center`}>
-                      <item.icon className={`w-6 h-6 ${item.color}`} />
+                    <div className={`w-10 h-10 md:w-12 md:h-12 rounded-xl ${item.bg} flex items-center justify-center shrink-0`}>
+                      <item.icon className={`w-5 h-5 md:w-6 md:h-6 ${item.color}`} />
                     </div>
                     <div>
-                      <div className="text-sm text-gray-500 uppercase font-bold tracking-wider mb-1">{item.title}</div>
-                      <div className="text-xl text-white font-bold group-hover:text-purple-300 transition-colors">{item.value}</div>
+                      <div className="text-[10px] md:text-sm text-gray-500 uppercase font-bold tracking-wider mb-0.5 md:mb-1">{item.title}</div>
+                      <div className="text-base md:text-xl text-white font-bold group-hover:text-purple-300 transition-colors break-all md:break-normal">{item.value}</div>
                     </div>
                   </motion.a>
                 ))}
@@ -192,49 +194,49 @@ export function Contact() {
 
             {/* Contact Form */}
             <motion.div
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="relative w-full max-w-xl mx-auto lg:mx-0"
             >
-              <div className="relative p-6 md:p-10 rounded-[2rem] bg-[#0A0A12] border border-white/10 shadow-2xl">
+              <div className="relative p-4 md:p-10 rounded-[2rem] bg-[#0A0A12] border border-white/10 shadow-2xl">
                 <BorderBeam duration={10} size={100} colorFrom="#3b82f6" colorTo="#a855f7" />
 
-                <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
+                <form onSubmit={handleSubmit} className="space-y-8 relative z-10">
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
+                    <div className="space-y-3">
                       <label className="text-xs font-bold text-gray-500 uppercase tracking-widest pl-1">Name</label>
                       <input
                         type="text"
                         name="name"
                         value={formState.name}
                         onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium"
+                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 md:py-3 text-[13px] md:text-base text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium"
                         placeholder="John Doe"
                         required
                       />
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-3">
                       <label className="text-xs font-bold text-gray-500 uppercase tracking-widest pl-1">Email</label>
                       <input
                         type="email"
                         name="email"
                         value={formState.email}
                         onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium"
+                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 md:py-3 text-[13px] md:text-base text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium"
                         placeholder="john@example.com"
                         required
                       />
                     </div>
                   </div>
 
-                  <div className="space-y-2">
+                  <div className="space-y-3">
                     <label className="text-xs font-bold text-gray-500 uppercase tracking-widest pl-1">Subject</label>
                     <select
                       name="subject"
                       value={formState.subject}
                       onChange={(e) => setFormState({ ...formState, subject: e.target.value })}
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium appearance-none [&>option]:bg-gray-900 [&>option]:text-white"
+                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 md:py-3 text-[13px] md:text-base text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium appearance-none [&>option]:bg-gray-900 [&>option]:text-white"
                       required
                     >
                       <option className="bg-gray-900 text-white" value="General Inquiry">General Inquiry</option>
@@ -245,13 +247,13 @@ export function Contact() {
                   </div>
 
                   {formState.subject === 'Start a Project' && (
-                    <div className="space-y-2">
+                    <div className="space-y-3">
                       <label className="text-xs font-bold text-gray-500 uppercase tracking-widest pl-1">Area of Interest</label>
                       <select
                         name="areaOfInterest"
                         value={formState.areaOfInterest}
                         onChange={(e) => setFormState({ ...formState, areaOfInterest: e.target.value })}
-                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium appearance-none [&>option]:bg-gray-900 [&>option]:text-white"
+                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 md:py-3 text-[13px] md:text-base text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium appearance-none [&>option]:bg-gray-900 [&>option]:text-white"
                         required
                       >
                         <option className="bg-gray-900 text-white" value="">Select a service...</option>
@@ -266,40 +268,40 @@ export function Contact() {
 
                   {formState.subject === 'Partnership' && (
                     <>
-                      <div className="space-y-2">
+                      <div className="space-y-3">
                         <label className="text-xs font-bold text-gray-500 uppercase tracking-widest pl-1">Company Name</label>
                         <input
                           type="text"
                           name="companyName"
                           value={formState.companyName}
                           onChange={(e) => setFormState({ ...formState, companyName: e.target.value })}
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium"
+                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 md:py-3 text-[13px] md:text-base text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium"
                           placeholder="Your Company Name"
                           required
                         />
                       </div>
 
-                      <div className="space-y-2">
+                      <div className="space-y-3">
                         <label className="text-xs font-bold text-gray-500 uppercase tracking-widest pl-1">Your Role in Company</label>
                         <input
                           type="text"
                           name="role"
                           value={formState.role}
                           onChange={(e) => setFormState({ ...formState, role: e.target.value })}
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium"
+                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 md:py-3 text-[13px] md:text-base text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium"
                           placeholder="e.g., CEO, Founder, Business Development Manager"
                           required
                         />
                       </div>
 
-                      <div className="space-y-2">
+                      <div className="space-y-3">
                         <label className="text-xs font-bold text-gray-500 uppercase tracking-widest pl-1">Year Company Started</label>
                         <input
                           type="number"
                           name="yearStarted"
                           value={formState.yearStarted}
                           onChange={(e) => setFormState({ ...formState, yearStarted: e.target.value })}
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium"
+                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 md:py-3 text-[13px] md:text-base text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium"
                           placeholder="e.g., 2020"
                           min="1900"
                           max={new Date().getFullYear()}
@@ -311,13 +313,13 @@ export function Contact() {
 
                   {formState.subject === 'Careers' && (
                     <>
-                      <div className="space-y-2">
+                      <div className="space-y-3">
                         <label className="text-xs font-bold text-gray-500 uppercase tracking-widest pl-1">Area of Work Looking For</label>
                         <select
                           name="interestedArea"
                           value={formState.interestedArea}
                           onChange={(e) => setFormState({ ...formState, interestedArea: e.target.value })}
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium appearance-none [&>option]:bg-gray-900 [&>option]:text-white"
+                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 md:py-3 text-[13px] md:text-base text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium appearance-none [&>option]:bg-gray-900 [&>option]:text-white"
                           required
                         >
                           <option className="bg-gray-900 text-white" value="">Select area of work...</option>
@@ -333,13 +335,13 @@ export function Contact() {
                         </select>
                       </div>
 
-                      <div className="space-y-2">
+                      <div className="space-y-3">
                         <label className="text-xs font-bold text-gray-500 uppercase tracking-widest pl-1">Years of Experience</label>
                         <select
                           name="yearsOfExperience"
                           value={formState.yearsOfExperience}
                           onChange={(e) => setFormState({ ...formState, yearsOfExperience: e.target.value })}
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium appearance-none [&>option]:bg-gray-900 [&>option]:text-white"
+                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 md:py-3 text-[13px] md:text-base text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium appearance-none [&>option]:bg-gray-900 [&>option]:text-white"
                           required
                         >
                           <option className="bg-gray-900 text-white" value="">Select experience...</option>
@@ -354,14 +356,14 @@ export function Contact() {
                       {(formState.yearsOfExperience === '1-2 years' ||
                         formState.yearsOfExperience === '2-3 years' ||
                         formState.yearsOfExperience === 'Above 3 years') && (
-                          <div className="space-y-2">
+                          <div className="space-y-3">
                             <label className="text-xs font-bold text-gray-500 uppercase tracking-widest pl-1">Your Previous Worked Company</label>
                             <input
                               type="text"
                               name="previousCompany"
                               value={formState.previousCompany}
                               onChange={(e) => setFormState({ ...formState, previousCompany: e.target.value })}
-                              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium"
+                              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 md:py-3 text-[13px] md:text-base text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium"
                               placeholder="Your most recent company"
                               required
                             />
@@ -370,14 +372,14 @@ export function Contact() {
                     </>
                   )}
 
-                  <div className="space-y-2">
+                  <div className="space-y-3">
                     <label className="text-xs font-bold text-gray-500 uppercase tracking-widest pl-1">Phone Number</label>
-                    <div className="flex gap-2">
+                    <div className="flex flex-col min-[375px]:flex-row gap-2">
                       <select
                         name="countryCode"
                         value={formState.countryCode}
                         onChange={(e) => setFormState({ ...formState, countryCode: e.target.value })}
-                        className="w-32 bg-white/5 border border-white/10 rounded-xl px-3 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium [&>option]:bg-gray-900 [&>option]:text-white"
+                        className="w-full min-[375px]:w-24 md:w-32 bg-white/5 border border-white/10 rounded-xl px-2 md:px-3 py-2 md:py-3 text-xs md:text-base text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium [&>option]:bg-gray-900 [&>option]:text-white"
                       >
                         <option className="bg-gray-900 text-white" value="+91">🇮🇳 +91</option>
                         <option className="bg-gray-900 text-white" value="+1">🇺🇸 +1</option>
@@ -409,21 +411,21 @@ export function Contact() {
                         name="phone"
                         value={formState.phone}
                         onChange={(e) => setFormState({ ...formState, phone: e.target.value })}
-                        className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium"
+                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 md:py-3 text-[13px] md:text-base text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium"
                         placeholder="98765 43210"
                         required
                       />
                     </div>
                   </div>
 
-                  <div className="space-y-2">
+                  <div className="space-y-3">
                     <label className="text-xs font-bold text-gray-500 uppercase tracking-widest pl-1">Message</label>
                     <textarea
                       rows={4}
                       name="message"
                       value={formState.message}
                       onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium resize-none"
+                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2 md:py-3 text-[13px] md:text-base text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-medium resize-none"
                       placeholder="Tell us about your project..."
                     />
                   </div>
@@ -431,7 +433,7 @@ export function Contact() {
                   <button
                     type="submit"
                     disabled={status === 'loading'}
-                    className={`w-full py-4 rounded-xl text-white font-bold text-lg shadow-lg transition-all flex items-center justify-center gap-2 ${status === 'success'
+                    className={`w-full py-3 md:py-4 rounded-xl text-white font-bold text-base md:text-lg shadow-lg transition-all flex items-center justify-center gap-2 ${status === 'success'
                       ? 'bg-green-600 hover:bg-green-700'
                       : status === 'error'
                         ? 'bg-red-600 hover:bg-red-700'
