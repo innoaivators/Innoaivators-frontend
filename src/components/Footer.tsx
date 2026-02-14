@@ -60,23 +60,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="md:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8">
-            <div>
-              <h4 className="font-semibold mb-4">Services</h4>
-              <ul className="space-y-2">
-                {services.map((service) => (
-                  <li key={service.name}>
-                    <Link
-                      to={service.path}
-                      className="text-gray-400 hover:text-white transition-colors duration-300"
-                    >
-                      {service.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
+          <div className="md:col-span-8 grid grid-cols-2 lg:grid-cols-3 gap-8">
             <div>
               <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2">
@@ -93,19 +77,35 @@ export function Footer() {
               </ul>
             </div>
 
-            <div className="col-span-2 md:col-span-1">
+            <div>
+              <h4 className="font-semibold mb-4">Services</h4>
+              <ul className="space-y-2">
+                {services.map((service) => (
+                  <li key={service.name}>
+                    <Link
+                      to={service.path}
+                      className="text-gray-400 hover:text-white transition-colors duration-300"
+                    >
+                      {service.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="col-span-2 lg:col-span-1">
               <h4 className="font-semibold mb-4">Contact Us</h4>
               <ul className="space-y-3 text-gray-400">
                 <li className="flex items-start">
                   <MapPin size={20} className="mr-3 mt-1 flex-shrink-0" />
                   <span>Near Thanku Bakery, Tirupparankunram Rd, pallivasal complex, Madurai, Tamil Nadu 625011</span>
                 </li>
-                <li className="flex items-center whitespace-nowrap">
-                  <Phone size={20} className="mr-3 flex-shrink-0" />
+                <li className="flex items-start">
+                  <Phone size={20} className="mr-3 mt-1 flex-shrink-0" />
                   <span>+91 90877 86231</span>
                 </li>
-                <li className="flex items-center whitespace-nowrap">
-                  <Phone size={20} className="mr-3 flex-shrink-0" />
+                <li className="flex items-start">
+                  <Phone size={20} className="mr-3 mt-1 flex-shrink-0" />
                   <span>+91 95664 65970</span>
                 </li>
                 <li className="flex items-center">
@@ -123,7 +123,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Innoaivators. All rights reserved.</p>
+          <p>&copy; 2020 Innoaivators. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors duration-300">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors duration-300">Terms of Service</a>
