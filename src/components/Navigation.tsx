@@ -4,7 +4,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import { NAV_LINKS, SERVICE_LINKS } from '../config/constants';
-import logo from '../assets/logo.jpg';
+import logo from '@/assets/new logo.jpeg';
 
 interface NavLink {
   name: string;

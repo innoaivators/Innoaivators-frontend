@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { Facebook, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
-import logo from '../assets/logo.jpg';
+import logo from '@/assets/new logo.jpeg';
 
 export function Footer() {
   const services = [

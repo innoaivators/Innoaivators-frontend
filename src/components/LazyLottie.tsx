@@ -8,6 +8,9 @@ interface LazyLottieProps {
     autoplay?: boolean;
 }
 
+// Pre-import all animations as URLs using Vite's glob import
+const animations = import.meta.glob('../assets/animations/*.json', { as: 'url', eager: true });
+
 export function LazyLottie({
     animationPath,
     className = '',
@@ -57,9 +60,19 @@ export function LazyLottie({
                 const LottieModule = await import('lottie-react');
                 setLottie(() => LottieModule.default);
 
-                // Dynamically import animation data
-                const animationModule = await import(`../assets/animations/${animationPath}`);
-                setAnimationData(animationModule.default);
+                // Dynamically load animation data using fetch from asset URL
+                const sanitizedPath = animationPath.replace(/\.json$/, '');
+                const key = `../assets/animations/${sanitizedPath}.json`;
+                const assetUrl = animations[key];
+
+                if (assetUrl) {
+                    const response = await fetch(assetUrl as string);
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    const data = await response.json();
+                    setAnimationData(data);
+                } else {
+                    console.error(`Animation not found: ${key}. Available animations:`, Object.keys(animations));
+                }
             } catch (error) {
                 console.error('Failed to load Lottie animation:', error);
             }
