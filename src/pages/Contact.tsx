@@ -51,9 +51,12 @@ export function Contact() {
       });
 
       if (response.ok) {
-        const successData = await response.json();
-        console.log('Email sent successfully:', successData);
+        // Transition to success state immediately since backend responded 200
         setStatus('success');
+
+        // Optional: log success data in background
+        response.json().then(data => console.log('Email delivery initiated:', data)).catch(e => { });
+
         setFormState({
           name: '',
           email: '',
