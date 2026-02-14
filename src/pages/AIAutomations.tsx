@@ -110,7 +110,7 @@ export function AIAutomations() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#050205] via-[#050205]/50 to-transparent z-0" />
 
-        <div className="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-16 items-start pt-40">
+        <div className="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-8 lg:gap-12 items-start pt-40">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -122,12 +122,12 @@ export function AIAutomations() {
               Artificial Superintelligence
             </div>
 
-            <h1 className="text-6xl md:text-8xl font-bold leading-[1.05] tracking-tight text-white">
+            <h1 className="text-4xl min-[375px]:text-5xl md:text-5xl lg:text-4xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-white">
               The Age of <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-fuchsia-400 to-rose-400 text-glow">Automation.</span>
             </h1>
 
-            <p className="text-xl text-gray-400 max-w-xl leading-relaxed">
+            <p className="text-lg lg:text-xl text-gray-400 max-w-xl leading-relaxed">
               Automating business processes with intelligent AI solutions.
               Improving efficiency, accuracy, and scalable growth.
             </p>
@@ -177,7 +177,7 @@ export function AIAutomations() {
             transition={{ duration: 1.5 }}
             className="relative lg:h-[700px] flex items-center justify-center perspective-1000"
           >
-            <div className="relative w-full max-w-lg aspect-square">
+            <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
               <div className="absolute inset-0 bg-gradient-to-br from-violet-600/20 to-rose-600/20 rounded-full blur-[80px] animate-pulse" />
 
               <div className="relative w-full h-full glass-panel rounded-3xl overflow-hidden border border-white/10 flex items-center justify-center group">
@@ -223,7 +223,7 @@ export function AIAutomations() {
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="text-sm font-bold tracking-[0.3em] text-violet-400 uppercase mb-4 text-glow-mild">Singularity</h2>
-            <h3 className="text-5xl md:text-6xl font-bold text-white mb-6">Beyond Human Limits</h3>
+            <h3 className="text-4xl md:text-6xl font-bold text-white mb-6">Beyond Human Limits</h3>
             <p className="text-gray-400 text-lg">Scalable intelligence for the modern enterprise.</p>
           </div>
 
@@ -320,7 +320,7 @@ export function AIAutomations() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-6xl md:text-8xl font-bold text-white mb-10 tracking-tight text-glow">
+            <h2 className="text-4xl min-[375px]:text-5xl md:text-5xl lg:text-4xl xl:text-8xl font-bold text-white mb-10 tracking-tight text-glow">
               Ready to automate <br /><span className="italic font-serif text-rose-400">your business processes?</span>
             </h2>
             <p className="text-2xl text-rose-200 mb-16 max-w-2xl mx-auto">

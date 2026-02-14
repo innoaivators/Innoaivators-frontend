@@ -106,7 +106,7 @@ export function WebDevelopment() {
         {/* Gradient Overlay for Text Readability */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#020205] via-transparent to-transparent z-0" />
 
-        <div className="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-16 items-start pt-40">
+        <div className="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-8 lg:gap-12 items-start pt-40">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -123,12 +123,12 @@ export function WebDevelopment() {
               Web Development Redefined
             </motion.div>
 
-            <h1 className="text-6xl md:text-8xl font-bold leading-[1.05] tracking-tight text-white">
+            <h1 className="text-4xl min-[375px]:text-5xl md:text-5xl lg:text-4xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-white">
               Modern Web <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 text-glow">Development Solutions</span>
             </h1>
 
-            <p className="text-xl text-gray-400 max-w-xl leading-relaxed">
+            <p className="text-lg lg:text-xl text-gray-400 max-w-xl leading-relaxed">
               Building powerful websites that represent your brand.
               Driving growth through modern, user-focused web solutions.
             </p>
@@ -156,7 +156,7 @@ export function WebDevelopment() {
               </motion.a>
             </div>
 
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/10">
+            <div className="grid grid-cols-2 min-[375px]:grid-cols-3 gap-4 min-[375px]:gap-6 pt-8 border-t border-white/10">
               {heroMetrics.map((metric, i) => (
                 <motion.div
                   key={metric.label}
@@ -179,7 +179,7 @@ export function WebDevelopment() {
             transition={{ duration: 1.2, ease: "easeOut" }}
             className="relative lg:h-[700px] flex items-center justify-center perspective-1000"
           >
-            <div className="relative w-full max-w-lg aspect-[4/5] glass-panel rounded-[2rem] p-6 shadow-2xl overflow-hidden transform transition-transform hover:scale-[1.02] duration-500">
+            <div className="relative w-full max-w-md lg:max-w-lg aspect-[4/5] glass-panel rounded-[2rem] p-6 shadow-2xl overflow-hidden transform transition-transform hover:scale-[1.02] duration-500">
               <BorderBeam duration={8} size={200} colorFrom="#6366f1" colorTo="#ec4899" />
 
               {/* Internal UI Mockup */}
@@ -246,7 +246,7 @@ export function WebDevelopment() {
           >
             <BorderBeam duration={10} size={300} colorFrom="#6366f1" colorTo="#ec4899" />
 
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 relative z-10">
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 relative z-10">
               Why I need <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">web development?</span>
             </h2>
             <p className="text-xl text-gray-400 leading-relaxed relative z-10">
@@ -368,7 +368,7 @@ export function WebDevelopment() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-6xl md:text-8xl font-bold text-white mb-10 tracking-tight text-glow">
+            <h2 className="text-4xl min-[375px]:text-5xl md:text-5xl lg:text-4xl xl:text-8xl font-bold text-white mb-10 tracking-tight text-glow">
               Ready to take your <br /><span className="italic font-serif text-indigo-400">business online?</span>
             </h2>
             <p className="text-2xl text-indigo-200 mb-16 max-w-2xl mx-auto">

@@ -107,7 +107,7 @@ export function AppDevelopment() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#050510] via-[#050510]/50 to-transparent z-0" />
 
-        <div className="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-16 items-start pt-40">
+        <div className="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-8 lg:gap-12 items-start pt-40">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -119,7 +119,7 @@ export function AppDevelopment() {
               Next-Gen Mobile Solutions
             </div>
 
-            <h1 className="text-6xl md:text-8xl font-bold leading-[1.05] tracking-tight text-white">
+            <h1 className="text-4xl min-[375px]:text-5xl md:text-5xl lg:text-4xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-white">
               Complete <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-fuchsia-400 text-glow">Android & iOS App Development</span>
             </h1>
@@ -174,7 +174,7 @@ export function AppDevelopment() {
             transition={{ duration: 1.2, delay: 0.2, type: "spring" }}
             className="relative lg:h-[700px] flex items-center justify-center"
           >
-            <div className="relative w-[300px] h-[600px] rounded-[3rem] border-4 border-gray-800 bg-black shadow-2xl overflow-hidden transform rotate-[-5deg] hover:rotate-0 transition-transform duration-700">
+            <div className="relative w-[240px] lg:w-[300px] h-[480px] lg:h-[600px] rounded-[3rem] border-4 border-gray-800 bg-black shadow-2xl overflow-hidden transform rotate-[-5deg] hover:rotate-0 transition-transform duration-700">
               <BorderBeam duration={6} size={400} colorFrom="#22d3ee" colorTo="#d946ef" />
               {/* Screen Content */}
               <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black flex flex-col">
@@ -238,7 +238,7 @@ export function AppDevelopment() {
           >
             <BorderBeam duration={10} size={300} colorFrom="#22d3ee" colorTo="#d946ef" />
 
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 relative z-10">
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 relative z-10">
               Why I need <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">app development?</span>
             </h2>
             <p className="text-xl text-gray-400 leading-relaxed relative z-10">
@@ -353,7 +353,7 @@ export function AppDevelopment() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-6xl md:text-8xl font-bold text-white mb-10 tracking-tight text-glow">
+            <h2 className="text-4xl min-[375px]:text-5xl md:text-5xl lg:text-4xl xl:text-8xl font-bold text-white mb-10 tracking-tight text-glow">
               Ready to launch your <br /><span className="italic font-serif text-cyan-400">mobile app?</span>
             </h2>
             <p className="text-2xl text-cyan-200 mb-16 max-w-2xl mx-auto">
