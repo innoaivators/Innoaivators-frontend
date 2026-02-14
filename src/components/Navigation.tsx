@@ -134,7 +134,7 @@ export function Navigation() {
 
       {/* Mobile Navigation */}
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 md:hidden transition-all duration-300 ${isScrolled ? 'bg-[#050510]/90 backdrop-blur-md border-b border-white/10' : 'bg-transparent'
+        className={`fixed top-0 left-0 right-0 z-50 md:hidden transition-all duration-300 ${isScrolled ? 'bg-[#050510]/90 backdrop-blur-md border-b border-white/10' : 'bg-[#050205]/40 backdrop-blur-sm'
           }`}
       >
         <div className="flex justify-between items-center px-6 h-20">

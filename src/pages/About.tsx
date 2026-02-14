@@ -93,7 +93,7 @@ export function About() {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-transparent text-white about-container">
+    <div className="w-full min-h-screen bg-primary-black text-white about-container overflow-x-hidden">
       <SEO
         title="About Us"
         description="Learn about Innoaivators, our mission, values, and the team behind our innovative digital solutions."
