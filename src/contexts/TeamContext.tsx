@@ -45,6 +45,7 @@ export const TeamProvider: React.FC<TeamProviderProps> = ({ children }) => {
 
         { id: '5', name: 'Mafaz', role: 'Co-founder, AI Specialist & Prompt Engineer', image: '/src/team/mafaz.jpg' },
         { id: '6', name: 'Safiq', role: 'Co-founder, Creative Designer & Developer', image: '/src/team/safiq.jpg' },
+        { id: '7', name: 'Vigneshwaran', role: 'Co-founder and Senior Developer', image: '/src/team/vigneshwaran.png' },
       ];
       setMembers(defaultMembers);
       localStorage.setItem('teamMembers', JSON.stringify(defaultMembers));

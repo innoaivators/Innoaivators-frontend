@@ -12,6 +12,7 @@ import allen from '../team/allen.jpg';
 import mafaz from '../team/mafaz.jpg';
 import safiq from '../team/safiq.jpg';
 import jayabalaji from '../team/JayaBalaji.jpg';
+import vigneshwaran from '../team/vigneshwaran.png';
 
 import Timeline from './Timeline';
 import './Timeline.css';
@@ -87,6 +88,14 @@ export function About() {
       name: 'JayaBalaji',
       role: 'Co-founder, HR, Senior developer',
       image: jayabalaji,
+      imageScale: 1.0,
+      imageOffset: { x: 50, y: 15 },
+    },
+    {
+      id: '8',
+      name: 'Vigneshwaran',
+      role: 'Co-founder and Senior Developer',
+      image: vigneshwaran,
       imageScale: 1.0,
       imageOffset: { x: 50, y: 15 },
     },
