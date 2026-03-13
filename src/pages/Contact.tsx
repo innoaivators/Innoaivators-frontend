@@ -55,7 +55,7 @@ export function Contact() {
         setStatus('success');
 
         // Optional: log success data in background
-        response.json().then(data => console.log('Email delivery initiated:', data)).catch(e => { });
+        response.json().then(data => console.log('Email delivery initiated:', data)).catch(() => { });
 
         setFormState({
           name: '',

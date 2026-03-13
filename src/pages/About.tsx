@@ -13,6 +13,7 @@ import mafaz from '../team/mafaz.jpg';
 import safiq from '../team/safiq.jpg';
 import jayabalaji from '../team/JayaBalaji.jpg';
 import vigneshwaran from '../team/vigneshwaran.png';
+import vasanth from '../team/Vasanth.jpeg';
 
 import Timeline from './Timeline';
 import './Timeline.css';
@@ -45,7 +46,7 @@ export function About() {
     {
       id: '1',
       name: 'Abdur',
-      role: 'Founder, Gen AI Specialist, IoT Developer',
+      role: 'Founder',
       image: abdur,
       imageScale: 1.0,
       imageOffset: { x: 50, y: 40 },
@@ -53,7 +54,7 @@ export function About() {
     {
       id: '2',
       name: 'Afsal',
-      role: 'Co-founder, CEO',
+      role: 'Co Founder',
       image: afsal,
       imageScale: 1.0,
       imageOffset: { x: 50, y: 15 },
@@ -61,7 +62,7 @@ export function About() {
     {
       id: '3',
       name: 'Allen',
-      role: 'Co-founder, MD',
+      role: 'Co Founder',
       image: allen,
       imageScale: 1.0,
       imageOffset: { x: 50, y: 10 },
@@ -70,7 +71,7 @@ export function About() {
     {
       id: '5',
       name: 'Mafaz',
-      role: 'Co-founder, AI Specialist & Prompt Engineer',
+      role: 'Co Founder',
       image: mafaz,
       imageScale: 1.0,
       imageOffset: { x: 50, y: 15 },
@@ -78,7 +79,7 @@ export function About() {
     {
       id: '6',
       name: 'Safiq',
-      role: 'Co-founder, Creative Designer & Developer',
+      role: 'Co Founder',
       image: safiq,
       imageScale: 1.0,
       imageOffset: { x: 50, y: 45 },
@@ -86,7 +87,7 @@ export function About() {
     {
       id: '7',
       name: 'JayaBalaji',
-      role: 'Co-founder, HR, Senior developer',
+      role: 'Co Founder',
       image: jayabalaji,
       imageScale: 1.0,
       imageOffset: { x: 50, y: 15 },
@@ -94,8 +95,16 @@ export function About() {
     {
       id: '8',
       name: 'Vigneshwaran',
-      role: 'Co-founder and Senior Developer',
+      role: 'Co Founder',
       image: vigneshwaran,
+      imageScale: 1.0,
+      imageOffset: { x: 50, y: 15 },
+    },
+    {
+      id: '9',
+      name: 'Vasanth',
+      role: 'Co Founder',
+      image: vasanth,
       imageScale: 1.0,
       imageOffset: { x: 50, y: 15 },
     },
