@@ -95,8 +95,8 @@ export function AppDevelopment() {
   return (
     <div className="relative w-full min-h-screen bg-[#050510] text-gray-200 font-sans selection:bg-cyan-500/30 overflow-x-hidden">
       <SEO
-        title="App Development"
-        description="Custom Android and iOS app development solutions. We build high-performance, user-centric mobile applications."
+        title="Mobile App Development"
+        description="Expert iOS and Android app development using React Native, Flutter, and Native technologies. Build high-performance, secure, and user-centric mobile solutions."
         canonical="https://innoaivators.com/app-development"
       />
 

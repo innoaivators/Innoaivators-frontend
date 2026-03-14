@@ -96,8 +96,8 @@ export function IoTDevelopment() {
   return (
     <div className="relative w-full min-h-screen bg-[#020502] text-gray-200 font-sans selection:bg-emerald-500/30 overflow-x-hidden">
       <SEO
-        title="IoT Development"
-        description="Intelligent IoT solutions for connected ecosystems. We design secure, scalable smart systems for industrial and consumer use."
+        title="IoT & Smart Systems Engineering"
+        description="Design and deploy industrial-grade IoT ecosystems. We build secure, scalable smart systems with edge intelligence and real-time data pipelines for the connected future."
         canonical="https://innoaivators.com/iot-development"
       />
 

@@ -17,8 +17,8 @@ export function Home() {
   return (
     <div className="bg-primary-black text-white">
       <SEO
-        title="Home"
-        description="Innoaivators: Your Partner in Digital Transformation, AI Automation, and Web/App Development."
+        title="InnoAivators | AI & Digital Transformation Partner"
+        description="Transform your vision into high-impact digital products. Professional AI automation, web engineering, and app development to scale your business with precision."
         canonical="https://innoaivators.com/"
       />
 

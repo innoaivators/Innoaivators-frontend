@@ -106,7 +106,7 @@ export function Contact() {
     {
       icon: MapPinIcon,
       title: 'Visit Us',
-      value: 'Near Thanku Bakery, Tirupparankunram Rd, pallivasal complex, Madurai, Tamil Nadu 625011',
+      value: 'Near Thank U Bakery, Thiruparankundram Rd, pallivasal complex, Madurai, Tamil Nadu 625011',
       link: '#',
       color: 'text-emerald-400',
       bg: 'bg-emerald-500/10'
@@ -117,7 +117,7 @@ export function Contact() {
     <div className="relative w-full min-h-screen bg-[#050510] text-gray-200 font-sans selection:bg-purple-500/30 overflow-x-hidden">
       <SEO
         title="Contact Us"
-        description="Get in touch with Innoaivators for your next digital project. We're here to help you build the impossible."
+        description="Connect with the engineering team at InnoAivators. Let's discuss your next breakthrough in AI, web, or mobile technology. Our 24/7 global support is here to help."
         canonical="https://innoaivators.com/contact"
       />
       {/* Video Background */}

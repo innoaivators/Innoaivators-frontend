@@ -114,7 +114,7 @@ export function About() {
     <div className="w-full min-h-screen bg-primary-black text-white about-container overflow-x-hidden">
       <SEO
         title="About Us"
-        description="Learn about Innoaivators, our mission, values, and the team behind our innovative digital solutions."
+        description="Meet the visionaries behind InnoAivators. We are a team of mission-driven engineers and designers dedicated to transforming businesses through state-of-the-art AI and digital engineering."
         canonical="https://innoaivators.com/about"
       />
       <div className="content-container">

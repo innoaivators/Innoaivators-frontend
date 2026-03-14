@@ -98,8 +98,8 @@ export function AIAutomations() {
   return (
     <div className="relative w-full min-h-screen bg-[#050205] text-gray-200 font-sans selection:bg-rose-500/30 overflow-x-hidden">
       <SEO
-        title="AI Automations"
-        description="Automate your business processes with intelligent AI solutions. We build cognitive workflows and autonomous agents."
+        title="AI & Machine Learning Automations"
+        description="Supercharge your business with autonomous AI agents and cognitive workflows. We build intelligent systems that reason, plan, and scale your operations beyond human limits."
         canonical="https://innoaivators.com/ai-automations"
       />
 

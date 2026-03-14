@@ -96,8 +96,8 @@ export function WebDevelopment() {
   return (
     <div className="relative w-full min-h-screen bg-[#020205] text-gray-200 font-sans selection:bg-indigo-500/30 overflow-x-hidden">
       <SEO
-        title="Web Development"
-        description="Modern web development solutions tailored to your business needs. We build immersive, fast, and secure websites."
+        title="Modern Web Engineering"
+        description="Transform your business with high-performance web solutions. We build immersive, blazingly fast, and enterprise-grade secure websites that drive conversions and scale with your growth."
         canonical="https://innoaivators.com/web-development"
       />
 

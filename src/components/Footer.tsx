@@ -98,7 +98,7 @@ export function Footer() {
               <ul className="space-y-3 text-gray-400">
                 <li className="flex items-start">
                   <MapPin size={20} className="mr-3 mt-1 flex-shrink-0" />
-                  <span>Near Thanku Bakery, Tirupparankunram Rd, pallivasal complex, Madurai, Tamil Nadu 625011</span>
+                  <span>Near Thank U Bakery, Thiruparankundram Rd, pallivasal complex, Madurai, Tamil Nadu 625011</span>
                 </li>
                 <li className="flex items-start">
                   <Phone size={20} className="mr-3 mt-1 flex-shrink-0" />

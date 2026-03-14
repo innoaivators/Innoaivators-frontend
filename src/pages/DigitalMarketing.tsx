@@ -90,8 +90,8 @@ export function DigitalMarketing() {
   return (
     <div className="relative w-full min-h-screen bg-[#050202] text-gray-200 font-sans selection:bg-orange-500/30 overflow-x-hidden">
       <SEO
-        title="Digital Marketing"
-        description="Result-driven digital marketing strategies to flood your funnel with high-intent leads and scale revenue."
+        title="Growth Marketing & SEO"
+        description="Result-driven digital marketing strategies to flood your funnel with high-intent leads. We specialize in SEO domination, performance PPC, and viral growth loops that scale your revenue."
         canonical="https://innoaivators.com/digital-marketing"
       />
 
