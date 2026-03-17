@@ -2,18 +2,8 @@
 import './About.css';
 import { TargetIcon, UsersIcon, TrophyIcon, RocketIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { TeamCarousel } from '../components/TeamCarousel';
 import { BorderBeam } from '../components/BorderBeam';
 import { SEO } from '../components/SEO';
-import abdur from '../team/abdur.jpg';
-import afsal from '../team/afsal.jpg';
-import allen from '../team/allen.jpg';
-
-import mafaz from '../team/mafaz.jpg';
-import safiq from '../team/safiq.jpg';
-import jayabalaji from '../team/JayaBalaji.jpg';
-import vigneshwaran from '../team/vigneshwaran.png';
-import vasanth from '../team/Vasanth.jpeg';
 
 import Timeline from './Timeline';
 import './Timeline.css';
@@ -42,73 +32,7 @@ export function About() {
     },
   ];
 
-  const members = [
-    {
-      id: '1',
-      name: 'Abdur',
-      role: 'Founder',
-      image: abdur,
-      imageScale: 1.0,
-      imageOffset: { x: 50, y: 40 },
-    },
-    {
-      id: '2',
-      name: 'Afsal',
-      role: 'Co Founder',
-      image: afsal,
-      imageScale: 1.0,
-      imageOffset: { x: 50, y: 15 },
-    },
-    {
-      id: '3',
-      name: 'Allen',
-      role: 'Co Founder',
-      image: allen,
-      imageScale: 1.0,
-      imageOffset: { x: 50, y: 10 },
-    },
 
-    {
-      id: '5',
-      name: 'Mafaz',
-      role: 'Co Founder',
-      image: mafaz,
-      imageScale: 1.0,
-      imageOffset: { x: 50, y: 15 },
-    },
-    {
-      id: '6',
-      name: 'Safiq',
-      role: 'Co Founder',
-      image: safiq,
-      imageScale: 1.0,
-      imageOffset: { x: 50, y: 45 },
-    },
-    {
-      id: '7',
-      name: 'JayaBalaji',
-      role: 'Co Founder',
-      image: jayabalaji,
-      imageScale: 1.0,
-      imageOffset: { x: 50, y: 15 },
-    },
-    {
-      id: '8',
-      name: 'Vigneshwaran',
-      role: 'Co Founder',
-      image: vigneshwaran,
-      imageScale: 1.0,
-      imageOffset: { x: 50, y: 15 },
-    },
-    {
-      id: '9',
-      name: 'Vasanth',
-      role: 'Co Founder',
-      image: vasanth,
-      imageScale: 1.0,
-      imageOffset: { x: 50, y: 15 },
-    },
-  ];
 
   return (
     <div className="w-full min-h-screen bg-primary-black text-white about-container overflow-x-hidden">
@@ -182,25 +106,7 @@ export function About() {
               <Timeline />
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="mb-20 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] flex flex-col items-center"
-            >
-              <h2 className="text-4xl font-bold text-center text-white mb-2">
-                Our Team
-              </h2>
-              <TeamCarousel
-                members={members}
-                infoPosition="bottom"
-                infoBackground="rgba(0, 0, 0, 0.5)"
-                autoPlay={2000}
-                animationDuration={800}
-                infoTextColor="white"
-                cardWidth={340}
-              />
-            </motion.div>
+
 
             <motion.div
               initial={{ opacity: 0, y: 40 }}

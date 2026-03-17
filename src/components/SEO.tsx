@@ -34,7 +34,7 @@ export function SEO({
         "description": "Leading AI and digital transformation agency specializing in web development, app development, IoT solutions, and AI automations.",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Near Thank U Bakery, Thiruparankundram Rd, pallivasal complex",
+            "streetAddress": "Near Thanku Bakery, Tirupparankunram Rd, pallivasal complex",
             "addressLocality": "Madurai",
             "addressRegion": "Tamil Nadu",
             "postalCode": "625011",

@@ -106,7 +106,7 @@ export function Contact() {
     {
       icon: MapPinIcon,
       title: 'Visit Us',
-      value: 'Near Thank U Bakery, Thiruparankundram Rd, pallivasal complex, Madurai, Tamil Nadu 625011',
+      value: 'Near Thanku Bakery, Tirupparankunram Rd, pallivasal complex, Madurai, Tamil Nadu 625011',
       link: '#',
       color: 'text-emerald-400',
       bg: 'bg-emerald-500/10'

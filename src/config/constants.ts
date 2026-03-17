@@ -69,58 +69,52 @@ export const SERVICES_DATA = [
 
 export const TESTIMONIALS_DATA = [
     {
-        quote: 'Innoaivators delivered a seamless automation suite that boosted our operational efficiency by 40%.',
-        name: 'Aarav Menon',
-        role: 'Director of Operations',
-        company: 'Vertex Logistics'
+        quote: 'Innoaivators transformed our vision into a stunning reality. Their profound expertise and innovative approach significantly elevated our brand\'s digital presence. The meticulous attention to detail and seamless execution were truly unparalleled.',
+        name: 'Nazira',
+        role: 'CEO',
+        company: 'Glossixpro'
     },
     {
-        quote: 'The team turned our fragmented data into actionable insights within weeks.',
-        name: 'Anika Sharma',
-        role: 'Head of Product',
-        company: 'NexWave Analytics'
+        quote: 'Working with Innoaivators was a brilliant decision for our startup. Their agility, deep technical acumen, and focus on delivering a truly pixel-perfect, cutting-edge platform exceeded all our expectations.',
+        name: 'Aathish',
+        role: 'Founder',
+        company: 'aatzy'
     },
     {
-        quote: 'Our app launch timeline was halved without compromising quality or performance.',
-        name: 'Rahul Kapoor',
-        role: 'CTO',
-        company: 'Skyline Fintech'
+        quote: 'Innoaivators provided us with highly scalable and resilient software solutions that perfectly align with our sustainable energy goals. Their proactive team helped streamline our operations effortlessly.',
+        name: 'Abdul kathir',
+        role: 'General Manager',
+        company: 'Agaram solar solutions'
     },
     {
-        quote: 'Their design thinking and engineering excellence set a new bar for our digital initiatives.',
-        name: 'Priya Desai',
-        role: 'Chief Innovation Officer',
-        company: 'Quantum Retail'
+        quote: 'Partnering with Innoaivators revolutionized our digital infrastructure. Their foresight, commitment to excellence, and robust engineering crafted a foundation that will drive our sustainable initiatives forward for years to come.',
+        name: 'Sulthan alavudeen',
+        role: 'CEO',
+        company: 'Agaram solar solutions'
     },
     {
-        quote: 'We now offer personalized experiences to millions of users thanks to their AI expertise.',
-        name: 'Ishaan Verma',
-        role: 'VP Customer Experience',
-        company: 'Aura Media'
+        quote: 'Their innovative strategies and unwavering commitment to quality completely transformed our business workflows. Innoaivators is a truly exceptional team that executes with precision and deep technical expertise.',
+        name: 'Khaled alshammari',
+        role: 'Executive',
+        company: 'Metallica kuwait'
     },
     {
-        quote: 'The IoT integration was flawless and future-proof, giving us confidence to scale.',
-        name: 'Maya Krishnan',
-        role: 'Head of Smart Infrastructure',
-        company: 'UrbanGrid'
+        quote: 'We engaged Innoaivators to scale our operations, and the results have been phenomenal. Their deep understanding of modern tech architectures coupled with a relentless drive for innovation made them an invaluable partner.',
+        name: 'Arivu',
+        role: 'CEO',
+        company: 'Wetrekindia & we solutions'
     },
     {
-        quote: 'Their agile delivery ensured every stakeholder stayed aligned and confident.',
-        name: 'Vikram Patel',
-        role: 'Program Manager',
-        company: 'Helios Manufacturing'
+        quote: 'The team at Innoaivators completely overhauled our IT infrastructure with zero downtime. Their tailored solutions and proactive support have drastically improved our system reliability and overall performance.',
+        name: 'Gulam',
+        role: 'IT Manager',
+        company: 'Glossixpro'
     },
     {
-        quote: 'We saw a threefold increase in qualified leads after the new digital strategy launched.',
-        name: 'Sneha Rao',
-        role: 'Marketing Lead',
-        company: 'Pulse Healthcare'
-    },
-    {
-        quote: 'Their proactive support keeps our mission-critical systems resilient around the clock.',
-        name: 'Rohan Iyer',
-        role: 'Head of IT',
-        company: 'BlueRiver Ventures'
+        quote: 'Partnering with Innoaivators has been a game-changer for our business strategy. Their strategic insights and flawless execution have driven substantial growth and positioned us as a market leader.',
+        name: 'Arafath',
+        role: 'Managing Director',
+        company: 'Glossixpro'
     }
 ];
 
